@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tech Fest 2026 Registration</title>
+</head>
+
+<body>
+
+<header>
+    <h1>Tech Fest 2026 — Registration</h1>
+    <p>Dept. of Computer Science & Engineering, BAUET</p>
+</header>
+
+<main>
+
+<form>
+
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Your full name" required><br><br>
+
+        <label for="email">Institutional Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="id@bauet.ac.bd" required><br><br>
+
+        <label for="phone">Phone Number (11 digits):</label><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="01700000000" required><br><br>
+
+        <label for="studentId">Student ID (9 digits):</label><br>
+        <input type="text" id="studentId" name="studentId" pattern="[0-9]{9}" required><br><br>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Event Registration</legend>
+
+        <p>Participant Category:</p>
+        <input type="radio" id="ug" name="category" value="Undergraduate">
+        <label for="ug">Undergraduate</label><br>
+
+        <input type="radio" id="pg" name="category" value="Postgraduate">
+        <label for="pg">Postgraduate</label><br>
+
+        <input type="radio" id="faculty" name="category" value="Faculty">
+        <label for="faculty">Faculty / Industry</label><br><br>
+
+        <p>Events (select all that apply):</p>
+
+        <input type="checkbox" id="hackathon" name="events" value="Hackathon">
+        <label for="hackathon">Hackathon</label><br>
+
+        <input type="checkbox" id="poster" name="events" value="Poster">
+        <label for="poster">Poster Presentation</label><br>
+
+        <input type="checkbox" id="gaming" name="events" value="Gaming">
+        <label for="gaming">Gaming Contest</label><br>
+
+        <input type="checkbox" id="robo" name="events" value="Robo">
+        <label for="robo">Robo Race</label><br><br>
+
+        <label for="tshirt">T-Shirt Size:</label><br>
+        <select id="tshirt" name="tshirt">
+            <option value="">-- Select --</option>
+            <option value="S">Small</option>
+            <option value="M">Medium</option>
+            <option value="L">Large</option>
+            <option value="XL">XL</option>
+        </select>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Additional Details</legend>
+
+        <label for="receipt">Payment Receipt (PDF or PNG):</label><br>
+        <input type="file" id="receipt" name="receipt" accept=".pdf, .png"><br><br>
+
+        <label for="notes">Special Requirements / Dietary Notes:</label><br>
+        <textarea id="notes" name="notes" rows="4" cols="40" placeholder="Leave blank if none"></textarea>
+
+    </fieldset>
+
+    <br>
+
+    <input type="submit" value="Submit Registration">
+    <input type="reset" value="Clear Form">
+
+</form>
+
+</main>
+
+<footer>
+    <p>Deadline: 5 August 2026 — BAUET Tech Fest Committee</p>
+</footer>
+
+</body>
+</html>
